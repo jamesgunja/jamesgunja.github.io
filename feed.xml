@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title></title>
+		<description>Stylish Jekyll Theme</description>
+		<link>/</link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Simple setup for csv log file on to kibana3</title>
+				<description>&lt;p&gt;Download&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;logstash-1.4.2&lt;/li&gt;
+  &lt;li&gt;kibana-3.1.0&lt;/li&gt;
+  &lt;li&gt;elasticsearch-0.90.11
+s
+Steps for dataflow
+    &lt;ul&gt;
+      &lt;li&gt;Start the elastic search.&lt;/li&gt;
+      &lt;li&gt;Open terminal to command  »elasticsearch-0.90.11/bin&amp;gt; elasticsearch&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Logstash 
+    &lt;ul&gt;
+      &lt;li&gt;Create file Grok file based on csv data format of logfile. name it as .config file(eg: test.config)&lt;/li&gt;
+      &lt;li&gt;Save the file as .config in logstash-1.4.2/bin folder&lt;/li&gt;
+      &lt;li&gt;Open terminal to command »logstash-1.4.2/bin&amp;gt;logstash agent -f test.config&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Kibana
+    &lt;ul&gt;
+      &lt;li&gt;Open terminal to command »logstash-1.4.2/bin&amp;gt;logstash web&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+				<link>/jekyll/setup/docker/2015/02/01/logstash-kibana3-elasticsearch.html</link>
+				<guid isPermaLink="true">/jekyll/setup/docker/2015/02/01/logstash-kibana3-elasticsearch.html</guid>
+			</item>
+		
+			<item>
+				<title>Jekyll with docker on mac setup!!</title>
+				<description>&lt;p&gt;Finally mananged to setup Jekyll on mac  and  started writing blog posts!&lt;/p&gt;
+
+&lt;p&gt;Jekyll is awesome framework to static websites, I have started this to write and manage my github projects docs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Jekyll Theme&lt;/a&gt; Awesome!&lt;/p&gt;
+
+</description>
+				<pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+				<link>/jekyll/setup/docker/2015/02/01/Jekyll-docker.html</link>
+				<guid isPermaLink="true">/jekyll/setup/docker/2015/02/01/Jekyll-docker.html</guid>
+			</item>
+		
+	</channel>
+</rss>
