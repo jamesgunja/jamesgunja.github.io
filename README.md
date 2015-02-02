@@ -1,2 +1,1 @@
-# jamesgunja.github.io
-jamesgunja.github.io
+# jekyll_theme
