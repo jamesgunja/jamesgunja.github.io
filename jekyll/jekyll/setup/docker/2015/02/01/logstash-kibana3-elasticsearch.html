@@ -57,7 +57,7 @@
 			</a>
 			
 			<a class="navbar-brand" href="/">
-				<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />
+				<img src="http://www.gravatar.com/avatar/?s=35" class="img-circle" />
 				
 			</a>
 		</div>
@@ -99,7 +99,7 @@
 
 
 <div id="bio" class="text-center">
-	find out!
+	jamesgunja
 </div>
 
 
@@ -168,30 +168,34 @@
 <ol>
   <li>logstash-1.4.2</li>
   <li>kibana-3.1.0</li>
-  <li>elasticsearch-0.90.11
-s
-Steps for dataflow
-    <ul>
-      <li>Start the elastic search.</li>
-      <li>Open terminal to command  »elasticsearch-0.90.11/bin&gt; elasticsearch</li>
-    </ul>
-  </li>
+  <li>elasticsearch-0.90.11</li>
 </ol>
+
+<p>Steps for dataflow
+- Start the elastic search.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>elasticsearch-0.90.11/bin
+<span class="nv">$ </span>elasticsearch</code></pre></div>
 
 <ul>
   <li>Logstash 
     <ul>
       <li>Create file Grok file based on csv data format of logfile. name it as .config file(eg: test.config)</li>
       <li>Save the file as .config in logstash-1.4.2/bin folder</li>
-      <li>Open terminal to command »logstash-1.4.2/bin&gt;logstash agent -f test.config</li>
-    </ul>
-  </li>
-  <li>Kibana
-    <ul>
-      <li>Open terminal to command »logstash-1.4.2/bin&gt;logstash web</li>
     </ul>
   </li>
 </ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>logstash-1.4.2/bin
+<span class="nv">$ </span>logstash agent -f test.config</code></pre></div>
+
+<ul>
+  <li>Kibana</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>logstash-1.4.2/bin
+<span class="nv">$ </span>logstash web</code></pre></div>
+
 
 	  </div>
 
@@ -275,9 +279,9 @@ Steps for dataflow
       </section>
 
       <section class="col-sm-6 author">
-        <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
+        <img src="http://www.gravatar.com/avatar/" class="img-rounded author-image" />
         <h4 class="section-title author-name">James Gunja</h4>
-        <p class="author-bio">find out!</p>
+        <p class="author-bio">jamesgunja</p>
       </section>
     </div>
 

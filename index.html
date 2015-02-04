@@ -175,30 +175,34 @@
 <ol>
   <li>logstash-1.4.2</li>
   <li>kibana-3.1.0</li>
-  <li>elasticsearch-0.90.11
-s
-Steps for dataflow
-    <ul>
-      <li>Start the elastic search.</li>
-      <li>Open terminal to command  »elasticsearch-0.90.11/bin&gt; elasticsearch</li>
-    </ul>
-  </li>
+  <li>elasticsearch-0.90.11</li>
 </ol>
+
+<p>Steps for dataflow
+- Start the elastic search.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>elasticsearch-0.90.11/bin
+<span class="nv">$ </span>elasticsearch</code></pre></div>
 
 <ul>
   <li>Logstash 
     <ul>
       <li>Create file Grok file based on csv data format of logfile. name it as .config file(eg: test.config)</li>
       <li>Save the file as .config in logstash-1.4.2/bin folder</li>
-      <li>Open terminal to command »logstash-1.4.2/bin&gt;logstash agent -f test.config</li>
-    </ul>
-  </li>
-  <li>Kibana
-    <ul>
-      <li>Open terminal to command »logstash-1.4.2/bin&gt;logstash web</li>
     </ul>
   </li>
 </ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>logstash-1.4.2/bin
+<span class="nv">$ </span>logstash agent -f test.config</code></pre></div>
+
+<ul>
+  <li>Kibana</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>logstash-1.4.2/bin
+<span class="nv">$ </span>logstash web</code></pre></div>
+
 
     
   </div>
@@ -225,6 +229,18 @@ Steps for dataflow
     <p>Finally mananged to setup Jekyll on mac  and  started writing blog posts!</p>
 
 <p>Jekyll is awesome framework to static websites, I have started this to write and manage my github projects docs.</p>
+
+<p>Open to boot2docker terminal.</p>
+
+<p>clone jekyll bootstrap..In my case I have used <a class="btn btn-default" href="https://github.com/dbtek/dbyll">Jekyll Dbyll</a> </p>
+
+<p>Once you have it.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd </span>dbyll-master
+<span class="nv">$ </span>docker run -i -t -v <span class="s2">&quot;$PWD:/src&quot;</span> -p 4000:4001 grahamc/jekyll serve --host<span class="o">=</span>0.0.0.0</code></pre></div>
+
+<p>This would download jekyll container and  expose Jekyll on 4000 port of docker container and you virtual machine at 4001.
+Just open browser with the virtual machine or boot2contianer IP. IP:4001.</p>
 
 <p><a class="btn btn-default" href="https://github.com/dbtek/dbyll">Jekyll Theme</a> Awesome!</p>
 

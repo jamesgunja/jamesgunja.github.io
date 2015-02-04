@@ -13,30 +13,34 @@
 &lt;ol&gt;
   &lt;li&gt;logstash-1.4.2&lt;/li&gt;
   &lt;li&gt;kibana-3.1.0&lt;/li&gt;
-  &lt;li&gt;elasticsearch-0.90.11
-s
-Steps for dataflow
-    &lt;ul&gt;
-      &lt;li&gt;Start the elastic search.&lt;/li&gt;
-      &lt;li&gt;Open terminal to command  »elasticsearch-0.90.11/bin&amp;gt; elasticsearch&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;elasticsearch-0.90.11&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Steps for dataflow
+- Start the elastic search.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;elasticsearch-0.90.11/bin
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;elasticsearch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Logstash 
     &lt;ul&gt;
       &lt;li&gt;Create file Grok file based on csv data format of logfile. name it as .config file(eg: test.config)&lt;/li&gt;
       &lt;li&gt;Save the file as .config in logstash-1.4.2/bin folder&lt;/li&gt;
-      &lt;li&gt;Open terminal to command »logstash-1.4.2/bin&amp;gt;logstash agent -f test.config&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Kibana
-    &lt;ul&gt;
-      &lt;li&gt;Open terminal to command »logstash-1.4.2/bin&amp;gt;logstash web&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;logstash-1.4.2/bin
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;logstash agent -f test.config&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kibana&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;logstash-1.4.2/bin
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;logstash web&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 </description>
 				<pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
 				<link>/jekyll/setup/docker/2015/02/01/logstash-kibana3-elasticsearch.html</link>
@@ -48,6 +52,18 @@ Steps for dataflow
 				<description>&lt;p&gt;Finally mananged to setup Jekyll on mac  and  started writing blog posts!&lt;/p&gt;
 
 &lt;p&gt;Jekyll is awesome framework to static websites, I have started this to write and manage my github projects docs.&lt;/p&gt;
+
+&lt;p&gt;Open to boot2docker terminal.&lt;/p&gt;
+
+&lt;p&gt;clone jekyll bootstrap..In my case I have used &lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Jekyll Dbyll&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Once you have it.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;dbyll-master
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run -i -t -v &lt;span class=&quot;s2&quot;&gt;&amp;quot;$PWD:/src&amp;quot;&lt;/span&gt; -p 4000:4001 grahamc/jekyll serve --host&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.0.0.0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This would download jekyll container and  expose Jekyll on 4000 port of docker container and you virtual machine at 4001.
+Just open browser with the virtual machine or boot2contianer IP. IP:4001.&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Jekyll Theme&lt;/a&gt; Awesome!&lt;/p&gt;
 
